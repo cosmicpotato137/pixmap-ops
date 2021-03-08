@@ -207,7 +207,7 @@ ppm_image ppm_image::grayscale()
 	return gray;
 }
 
-ppm_image ppm_image::blend(const ppm_image& other, float alpha)
+ppm_image ppm_image::alpha_blend(const ppm_image& other, float alpha)
 {
 	CORE_VALIDATE(other.width() == m_Width && other.height() == m_Height,
 		return ppm_image(m_Width, m_Height), "Dimensions of images must be the same!");
@@ -248,7 +248,7 @@ ppm_image ppm_image::subimage(int row, int column, int width, int height)
 
 ppm_image ppm_image::replace(const ppm_image& image, int row, int column)
 {
-	ppm_image repl(row + image.width(), column + image.height());
+	ppm_image repl(glm::max(row + image.width(), m_Width), glm::max(column + image.height(), m_Height));
 	for (int i = 0; i < m_Height; i++)
 	{
 		for (int j = 0; j < m_Width; j++)
@@ -258,7 +258,7 @@ ppm_image ppm_image::replace(const ppm_image& image, int row, int column)
 	}
 	for (int i = 0; i < image.height(); i++)
 	{
-		for (int j = 0; j < m_Width; j++)
+		for (int j = 0; j < image.width(); j++)
 		{
 			repl.set(i + row, j + column, image.get(i, j));
 		}

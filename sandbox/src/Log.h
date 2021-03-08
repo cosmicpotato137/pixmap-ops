@@ -51,7 +51,7 @@ bool GLLogCall(const char* function, const char* file, unsigned int line);
 #define CLIENT_CRITICAL(...)
 #endif
 
-
+#define ENABLE_ASSERTS
 // debug assertions
 #ifdef ENABLE_ASSERTS
 #define CLIENT_ASSERT(x, ...) {if(!(x)) { CLIENT_ERROR(__VA_ARGS__); __debugbreak(); } }

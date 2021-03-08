@@ -55,7 +55,7 @@ public:
 	ppm_image gamma_correct(float gamma);
 	ppm_image resize(int width, int height);
 	ppm_image grayscale();
-	ppm_image blend(const ppm_image& other, float alpha);
+	ppm_image alpha_blend(const ppm_image& other, float alpha);
 	ppm_image subimage(int row, int column, int width, int height);
 	ppm_image replace(const ppm_image& image, int row, int column);
 	

@@ -13,6 +13,9 @@
     <ClCompile Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\ppm_image.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\test.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\Log.h">
@@ -22,6 +25,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\ppm_image.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

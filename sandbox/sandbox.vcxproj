@@ -317,12 +317,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\Log.cpp" />
+    <ClCompile Include="src\test.cpp" />
     <ClInclude Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\Log.h" />
     <ClCompile Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\image_math.cpp" />
     <ClInclude Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\image_math.h" />
     <ClCompile Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\main.cpp" />
     <ClCompile Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\ppm_image.cpp" />
     <ClInclude Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\ppm_image.h" />
+    <ClInclude Include="src\test.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\NerdThings\GraphicsCourse\CGHomework1\ZERO_CHECK.vcxproj">
