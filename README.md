@@ -15,4 +15,5 @@ I implemented a sobel and a general kernel operation that let me play with filte
 ![alt text](https://github.com/msunde137/pixmap-ops/blob/master/building(ourline%2Bedge_detect).png)
 
 I also implemented vertical flip, and channel filters.
+
 ![alt text](https://github.com/msunde137/pixmap-ops/blob/master/building_red.png)
