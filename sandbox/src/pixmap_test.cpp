@@ -1,9 +1,8 @@
 #include "ppm_image.h"
-#include "test.h"
 #include <iostream>
 using namespace std;
 
-void test_method()
+int main(int argc, char** argv)
 {
 	ppm_image image;
 	image.load("res/feep.ppm");

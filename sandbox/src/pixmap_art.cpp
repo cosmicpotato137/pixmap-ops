@@ -3,7 +3,6 @@
 
 #include "Log.h"
 #include "ppm_image.h"
-#include "test.h"
 
 int main(int argc, char** argv)
 {

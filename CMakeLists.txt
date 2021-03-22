@@ -5,13 +5,12 @@ project(CGHomework1)
 
 # add packages
 find_package(OpenGL REQUIRED)
-find_library(GLEW NAMES glew32s PATHS vendor/lib/Win32)
+find_library(GLEW NAMES glew32s PATHS vendor/lib/x64)
 find_library(GLFW NAMES glfw3 PATHS vendor/lib)
 
 # include and lib dirs
-set(INCLUDE_DIRS vendor/include)
+set(INCLUDE_DIRS vendor/include sandbox/src/common)
 set(LIBRARY_DIRS vendor/lib)
-
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS 
