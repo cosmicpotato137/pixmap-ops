@@ -44,12 +44,12 @@ int main(int argc, char** argv)
 
 
 	ppm_image pixels;
-	pixels.load("res/building.ppm");
+	pixels.load("../../sandbox/res/building.ppm");
 	pixels = pixels.apply_kernel(blur, 3, 3, clamp_post);
 	pixels = pixels.apply_kernel(outline, 3, 3, sig_post);
 	pixels = pixels.edge_detect(.7);
 	//pixels = pixels.threshold(.7);
-	pixels.save("res/building(1).ppm");
+	pixels.save("../../sandbox/res/building(1).ppm");
 
 	//test_method();
 	

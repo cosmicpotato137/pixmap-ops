@@ -1,3 +1,0 @@
-C:/NerdThings/GraphicsCourse/CGHomework1/CMakeFiles/ALL_BUILD.dir
-C:/NerdThings/GraphicsCourse/CGHomework1/CMakeFiles/ZERO_CHECK.dir
-C:/NerdThings/GraphicsCourse/CGHomework1/sandbox/CMakeFiles/sandbox.dir

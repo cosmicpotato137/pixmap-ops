@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7624CF12-578E-33C6-9F97-F77F205F18E6}</ProjectGuid>
+    <ProjectGuid>{77AFAF7C-D40E-3283-A290-A3F9988C4F84}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\NerdThings\GraphicsCourse\CGHomework1\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\NerdThings\GraphicsCourse\pixmap-ops\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sandbox.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sandbox</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\NerdThings\GraphicsCourse\CGHomework1\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\NerdThings\GraphicsCourse\pixmap-ops\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sandbox.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sandbox</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\NerdThings\GraphicsCourse\CGHomework1\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\NerdThings\GraphicsCourse\pixmap-ops\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sandbox.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sandbox</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\NerdThings\GraphicsCourse\CGHomework1\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\NerdThings\GraphicsCourse\pixmap-ops\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sandbox.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sandbox</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /ENABLE_ASSERTS</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -104,10 +104,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -115,13 +115,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\vendor\lib\Win32\glew32s.lib;..\vendor\lib\glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/NerdThings/GraphicsCourse/CGHomework1/vendor/lib;C:/NerdThings/GraphicsCourse/CGHomework1/vendor/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\vendor\lib\Win32\glew32s.lib;..\..\vendor\lib\glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/NerdThings/GraphicsCourse/pixmap-ops/vendor/lib;C:/NerdThings/GraphicsCourse/pixmap-ops/vendor/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/NerdThings/GraphicsCourse/CGHomework1/bin/Debug/sandbox.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/NerdThings/GraphicsCourse/CGHomework1/bin/Debug/sandbox.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/NerdThings/GraphicsCourse/pixmap-ops/bin/Debug/sandbox.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/NerdThings/GraphicsCourse/pixmap-ops/bin/Debug/sandbox.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -130,7 +130,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /ENABLE_ASSERTS</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4018;4244;4305</DisableSpecificWarnings>
@@ -148,10 +148,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -159,13 +159,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\vendor\lib\Win32\glew32s.lib;..\vendor\lib\glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/NerdThings/GraphicsCourse/CGHomework1/vendor/lib;C:/NerdThings/GraphicsCourse/CGHomework1/vendor/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\vendor\lib\Win32\glew32s.lib;..\..\vendor\lib\glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/NerdThings/GraphicsCourse/pixmap-ops/vendor/lib;C:/NerdThings/GraphicsCourse/pixmap-ops/vendor/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/NerdThings/GraphicsCourse/CGHomework1/bin/Release/sandbox.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/NerdThings/GraphicsCourse/CGHomework1/bin/Release/sandbox.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/NerdThings/GraphicsCourse/pixmap-ops/bin/Release/sandbox.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/NerdThings/GraphicsCourse/pixmap-ops/bin/Release/sandbox.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /ENABLE_ASSERTS</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4018;4244;4305</DisableSpecificWarnings>
@@ -192,10 +192,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -203,13 +203,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\vendor\lib\Win32\glew32s.lib;..\vendor\lib\glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/NerdThings/GraphicsCourse/CGHomework1/vendor/lib;C:/NerdThings/GraphicsCourse/CGHomework1/vendor/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\vendor\lib\Win32\glew32s.lib;..\..\vendor\lib\glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/NerdThings/GraphicsCourse/pixmap-ops/vendor/lib;C:/NerdThings/GraphicsCourse/pixmap-ops/vendor/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/NerdThings/GraphicsCourse/CGHomework1/bin/MinSizeRel/sandbox.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/NerdThings/GraphicsCourse/CGHomework1/bin/MinSizeRel/sandbox.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/NerdThings/GraphicsCourse/pixmap-ops/bin/MinSizeRel/sandbox.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/NerdThings/GraphicsCourse/pixmap-ops/bin/MinSizeRel/sandbox.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -218,7 +218,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /ENABLE_ASSERTS</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -235,10 +235,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NOMINMAX;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\CGHomework1\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\NerdThings\GraphicsCourse\pixmap-ops\vendor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -246,13 +246,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\vendor\lib\Win32\glew32s.lib;..\vendor\lib\glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/NerdThings/GraphicsCourse/CGHomework1/vendor/lib;C:/NerdThings/GraphicsCourse/CGHomework1/vendor/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\vendor\lib\Win32\glew32s.lib;..\..\vendor\lib\glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/NerdThings/GraphicsCourse/pixmap-ops/vendor/lib;C:/NerdThings/GraphicsCourse/pixmap-ops/vendor/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/NerdThings/GraphicsCourse/CGHomework1/bin/RelWithDebInfo/sandbox.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/NerdThings/GraphicsCourse/CGHomework1/bin/RelWithDebInfo/sandbox.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/NerdThings/GraphicsCourse/pixmap-ops/bin/RelWithDebInfo/sandbox.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/NerdThings/GraphicsCourse/pixmap-ops/bin/RelWithDebInfo/sandbox.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -260,10 +260,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/NerdThings/GraphicsCourse/CGHomework1/sandbox/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\NerdThings\GraphicsCourse\pixmap-ops\sandbox\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/NerdThings/GraphicsCourse/pixmap-ops/sandbox/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/NerdThings/GraphicsCourse/CGHomework1 -BC:/NerdThings/GraphicsCourse/CGHomework1 --check-stamp-file C:/NerdThings/GraphicsCourse/CGHomework1/sandbox/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/NerdThings/GraphicsCourse/pixmap-ops -BC:/NerdThings/GraphicsCourse/pixmap-ops/build --check-stamp-file C:/NerdThings/GraphicsCourse/pixmap-ops/build/sandbox/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -272,11 +272,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\NerdThings\GraphicsCourse\pixmap-ops\build\sandbox\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/NerdThings/GraphicsCourse/CGHomework1/sandbox/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/NerdThings/GraphicsCourse/pixmap-ops/sandbox/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/NerdThings/GraphicsCourse/CGHomework1 -BC:/NerdThings/GraphicsCourse/CGHomework1 --check-stamp-file C:/NerdThings/GraphicsCourse/CGHomework1/sandbox/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/NerdThings/GraphicsCourse/pixmap-ops -BC:/NerdThings/GraphicsCourse/pixmap-ops/build --check-stamp-file C:/NerdThings/GraphicsCourse/pixmap-ops/build/sandbox/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -285,11 +285,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\NerdThings\GraphicsCourse\pixmap-ops\build\sandbox\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/NerdThings/GraphicsCourse/CGHomework1/sandbox/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/NerdThings/GraphicsCourse/pixmap-ops/sandbox/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/NerdThings/GraphicsCourse/CGHomework1 -BC:/NerdThings/GraphicsCourse/CGHomework1 --check-stamp-file C:/NerdThings/GraphicsCourse/CGHomework1/sandbox/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/NerdThings/GraphicsCourse/pixmap-ops -BC:/NerdThings/GraphicsCourse/pixmap-ops/build --check-stamp-file C:/NerdThings/GraphicsCourse/pixmap-ops/build/sandbox/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -298,11 +298,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\NerdThings\GraphicsCourse\pixmap-ops\build\sandbox\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/NerdThings/GraphicsCourse/CGHomework1/sandbox/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/NerdThings/GraphicsCourse/pixmap-ops/sandbox/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/NerdThings/GraphicsCourse/CGHomework1 -BC:/NerdThings/GraphicsCourse/CGHomework1 --check-stamp-file C:/NerdThings/GraphicsCourse/CGHomework1/sandbox/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/NerdThings/GraphicsCourse/pixmap-ops -BC:/NerdThings/GraphicsCourse/pixmap-ops/build --check-stamp-file C:/NerdThings/GraphicsCourse/pixmap-ops/build/sandbox/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -311,24 +311,24 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\NerdThings\GraphicsCourse\pixmap-ops\build\sandbox\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\Log.cpp" />
-    <ClCompile Include="src\test.cpp" />
-    <ClInclude Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\Log.h" />
-    <ClCompile Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\image_math.cpp" />
-    <ClInclude Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\image_math.h" />
-    <ClCompile Include="src\pixmap_art.cpp" />
-    <ClCompile Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\ppm_image.cpp" />
-    <ClInclude Include="C:\NerdThings\GraphicsCourse\CGHomework1\sandbox\src\ppm_image.h" />
-    <ClInclude Include="src\test.h" />
+    <ClCompile Include="C:\NerdThings\GraphicsCourse\pixmap-ops\sandbox\src\Log.cpp" />
+    <ClInclude Include="C:\NerdThings\GraphicsCourse\pixmap-ops\sandbox\src\Log.h" />
+    <ClCompile Include="C:\NerdThings\GraphicsCourse\pixmap-ops\sandbox\src\image_math.cpp" />
+    <ClInclude Include="C:\NerdThings\GraphicsCourse\pixmap-ops\sandbox\src\image_math.h" />
+    <ClCompile Include="C:\NerdThings\GraphicsCourse\pixmap-ops\sandbox\src\pixmap_art.cpp" />
+    <ClCompile Include="C:\NerdThings\GraphicsCourse\pixmap-ops\sandbox\src\ppm_image.cpp" />
+    <ClInclude Include="C:\NerdThings\GraphicsCourse\pixmap-ops\sandbox\src\ppm_image.h" />
+    <ClCompile Include="C:\NerdThings\GraphicsCourse\pixmap-ops\sandbox\src\test.cpp" />
+    <ClInclude Include="C:\NerdThings\GraphicsCourse\pixmap-ops\sandbox\src\test.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\NerdThings\GraphicsCourse\CGHomework1\ZERO_CHECK.vcxproj">
-      <Project>{DEA61C1A-B51A-3155-A31D-0BCFAE78E2A3}</Project>
+    <ProjectReference Include="C:\NerdThings\GraphicsCourse\pixmap-ops\build\ZERO_CHECK.vcxproj">
+      <Project>{EAB14C46-F938-39E2-BF3D-80CC13D2B299}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

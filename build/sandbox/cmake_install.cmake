@@ -1,4 +1,4 @@
-# Install script for directory: C:/NerdThings/GraphicsCourse/CGHomework1/sandbox
+# Install script for directory: C:/NerdThings/GraphicsCourse/pixmap-ops/sandbox
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
